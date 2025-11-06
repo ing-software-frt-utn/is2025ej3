@@ -32,7 +32,8 @@ public class Product {
     public void setTax(double tax) { this.tax = tax; }
 
     public double getPriceWithTax() {
-        return (price * tax);
+        FinalPrice= (price * tax);
+        return price + FinalPrice;
     }
 
 }
