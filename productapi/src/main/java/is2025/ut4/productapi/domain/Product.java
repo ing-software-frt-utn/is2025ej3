@@ -5,8 +5,11 @@ public class Product {
     private String description;
     private double price;
     private int stock;
+    private double finalPrice;
+    private double tax;
 
-    public Product() {}
+    public Product() {
+    }
 
     public Product(String code, String description, double price, int stock) {
         this.code = code;
@@ -15,15 +18,43 @@ public class Product {
         this.stock = stock;
     }
 
-    public String getCode() { return code; }
-    public void setCode(String code) { this.code = code; }
+    public String getCode() {
+        return code;
+    }
 
-    public String getDescription() { return description; }
-    public void setDescription(String description) { this.description = description; }
+    public void setCode(String code) {
+        this.code = code;
+    }
 
-    public double getPrice() { return price; }
-    public void setPrice(double price) { this.price = price; }
+    public String getDescription() {
+        return description;
+    }
 
-    public int getStock() { return stock; }
-    public void setStock(int stock) { this.stock = stock; }
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
+    }
+
+    public double getFinalPrice() {
+        return finalPrice = this.price + this.tax;
+    }
+
+    public void setFinalPrice(double finalPrice) {
+        this.finalPrice = finalPrice;
+    }
 }
