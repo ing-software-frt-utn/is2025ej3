@@ -5,6 +5,7 @@ public class Product {
     private String description;
     private double price;
     private int stock;
+    private double tax;
 
     public Product() {}
 
@@ -26,4 +27,12 @@ public class Product {
 
     public int getStock() { return stock; }
     public void setStock(int stock) { this.stock = stock; }
+
+    public double getTax() { return tax; }
+    public void setTax(double tax) { this.tax = tax; }
+
+    public double getPriceWithTax() {
+        return (price * tax);
+    }
+
 }
